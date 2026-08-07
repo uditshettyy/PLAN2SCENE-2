@@ -1,35 +1,91 @@
-# Virtual environment
+# =========================
+# Python Environment
+# =========================
+
 venv/
 .env/
+.venv/
 
-# Python cache
+# =========================
+# Python Cache
+# =========================
+
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Jupyter
+# =========================
+# Jupyter Notebook
+# =========================
+
 .ipynb_checkpoints/
 
+# =========================
 # Logs
+# =========================
+
 *.log
 
-# OS files
+# =========================
+# OS Files
+# =========================
+
 .DS_Store
 Thumbs.db
 
+# =========================
 # IDE
+# =========================
+
 .vscode/
+.idea/
 
-# Large datasets
-data/cubicasa5k/
+# =========================
+# Large Datasets
+# =========================
 
-# Model weights
-models/*.pth
+data/
+dataset/cubicasa5k/
+dataset/raw/
+*.zip
+
+# =========================
+# Model Weights
+# =========================
+
 models/*.pt
+models/*.pth
+models/*.onnx
+*.weights
 
-# Training outputs
+# =========================
+# Training Outputs
+# =========================
+
 runs/
 outputs/
-
-# Generated visualization outputs
 verify_outputs/
 viz_outputs/
+
+# =========================
+# Frontend
+# =========================
+
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# =========================
+# Environment Files
+# =========================
+
+*.env
+.env.*
+
+# =========================
+# Temporary Files
+# =========================
+
+*.tmp
+*.temp
+*.cache
